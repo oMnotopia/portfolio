@@ -1,0 +1,22 @@
+.nav{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh
+}
+
+.title h1{
+  margin: 0;
+  font-size: 1rem;
+}
+
+.info {
+  display: flex;
+
+}
+
+.info p {
+  margin: 0;
+  padding: 0.5rem;
+}
