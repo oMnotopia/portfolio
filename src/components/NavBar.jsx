@@ -6,12 +6,12 @@ const NavBar = () => {
     <>
       <nav className="nav">
         <div className="title">
-          <h1>Clayton Persinger</h1>
+          <a href="#">Clayton Persinger</a>
         </div>
         <div className="info">
-          <p>About</p>
-          <p>Projects</p>
-          <p>Blog</p>
+          <a href="#">About</a>
+          <a href="#">projects</a>
+          <a href="#">Blog</a>
         </div>
       </nav>
     </>

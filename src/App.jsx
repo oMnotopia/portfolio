@@ -1,7 +1,7 @@
-import HomePage from "./components/homePage"
-import NavBar from "./components/NavBar"
+import HomePage from "./components/homePage";
+import NavBar from "./components/NavBar";
 
-import './styles/App.css'
+import './styles/App.css';
 
 const App = () => {
  
