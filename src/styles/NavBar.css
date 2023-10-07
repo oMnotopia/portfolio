@@ -6,9 +6,15 @@
   height: 10vh
 }
 
-.title h1{
-  margin: 0;
+.nav > * > a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title a{
   font-size: 1rem;
+  padding: 0.5rem;
 }
 
 .info {
@@ -16,7 +22,7 @@
 
 }
 
-.info p {
+.info a {
   margin: 0;
   padding: 0.5rem;
 }
