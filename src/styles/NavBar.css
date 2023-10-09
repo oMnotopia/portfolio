@@ -7,25 +7,25 @@
 }
 
 .nav * a.active {
-  color: red;
+  color: #F6019D;
 }
 
 nav .info {
   --_gap: 2rem;
   display: flex;
   list-style: none;
-  
 }
 
 nav .info > *, nav .title > * {
   text-decoration: none;
   text-transform: uppercase;
-  color: inherit;
+  color: #2DE2E6;
 }
 
 nav .title a {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0 1rem;
+  position: relative;
 }
 
 nav .info a {
@@ -34,11 +34,11 @@ nav .info a {
   margin: 0;
 }
 
-nav .info a:hover {
+nav .info a:hover, nav .title a:hover {
   color: #F6019D;
 }
 
-nav .info a:hover::after {
+nav .info a:hover::after, nav .title a:hover::after {
   scale: 1 1;
 }
 
