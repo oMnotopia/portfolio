@@ -6,27 +6,51 @@
   height: 10vh
 }
 
-.nav > * > a {
-  list-style: none;
-  text-decoration: none;
-  color: inherit;
-}
-
 .nav * a.active {
   color: red;
 }
 
-.title a{
+nav .info {
+  --_gap: 2rem;
+  display: flex;
+  list-style: none;
+  
+}
+
+nav .info > *, nav .title > * {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+nav .title a {
   font-size: 1rem;
   padding: 0.5rem;
 }
 
-.info {
-  display: flex;
-
+nav .info a {
+  padding-inline: calc(var(--_gap) / 2);
+  position: relative;
+  margin: 0;
 }
 
-.info a {
-  margin: 0;
-  padding: 0.5rem;
+nav .info a:hover {
+  color: #F6019D;
+}
+
+nav .info a:hover::after {
+  scale: 1 1;
+}
+
+nav .info a::after, nav .title a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 3px;
+  width: 100%;
+  background: orangered;
+  
+  scale: 0 1;
+  transition: scale 250ms;
 }
