@@ -1,0 +1,28 @@
+#home-page{
+  width: 75%;
+  height: calc(100vh - 10vh); /* 10vh is heigh of navbar */
+  margin: auto;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.intro{
+  font-size: 0.8rem;
+  color: #2DE2E6;
+}
+.name {
+  color: #F6019D;
+}
+
+.info {
+  color: #2DE2E6;
+}
+
+.description {
+  color: #2DE2E6;
+}
