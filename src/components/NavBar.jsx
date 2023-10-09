@@ -1,19 +1,21 @@
 import '../styles/NavBar.css'
 
+import { Link, Outlet } from "react-router-dom"
 
 const NavBar = () => {
   return (
     <>
       <nav className="nav">
         <div className="title">
-          <a href="/">Clayton Persinger</a>
+          <Link to={`/`}>Clayton Persinger</Link>
         </div>
         <div className="info">
-          <a href="/about">About</a>
-          <a href="#">projects</a>
-          <a href="#">Blog</a>
+          <Link to={`/about`}>About</Link>
+          <Link to={`#`}>projects</Link>
+          <Link to={`#`}>Blog</Link>
         </div>
       </nav>
+      <Outlet />
     </>
   )
 }
