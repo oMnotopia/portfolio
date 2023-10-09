@@ -7,12 +7,12 @@ const NavBar = () => {
     <>
       <nav className="nav">
         <div className="title">
-          <NavLink to={`/`}>Clayton Persinger</NavLink>
+          <NavLink to={`/`} >Clayton Persinger</NavLink>
         </div>
         <div className="info">
-          <NavLink to={`/about`}>About</NavLink>
-          <NavLink to={`/projects`}>Projects</NavLink>
-          {/* <NavLink to={`#`}>Blog</NavLink> */}
+          <NavLink to={`/about`} >About</NavLink>
+          <NavLink to={`/projects`} >Projects</NavLink>
+          {/* <NavLink to={`#`} >Blog</NavLink> */}
         </div>
       </nav>
       <Outlet />
