@@ -1,18 +1,18 @@
 import '../styles/NavBar.css'
 
-import { Link, Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 const NavBar = () => {
   return (
     <>
       <nav className="nav">
         <div className="title">
-          <Link to={`/`}>Clayton Persinger</Link>
+          <NavLink to={`/`}>Clayton Persinger</NavLink>
         </div>
         <div className="info">
-          <Link to={`/about`}>About</Link>
-          <Link to={`#`}>projects</Link>
-          <Link to={`#`}>Blog</Link>
+          <NavLink to={`/about`}>About</NavLink>
+          <NavLink to={`/projects`}>Projects</NavLink>
+          {/* <NavLink to={`#`}>Blog</NavLink> */}
         </div>
       </nav>
       <Outlet />
