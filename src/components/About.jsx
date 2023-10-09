@@ -1,4 +1,3 @@
-import { Form } from "react-router-dom";
 import selfie from "../assets/selfie.jpg"
 
 import '../styles/About.css'
