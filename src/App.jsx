@@ -37,7 +37,6 @@ const App = () => {
  
   return (
     <>
-      {/* <NavBar /> */}
       <RouterProvider
         router={router}
         />
