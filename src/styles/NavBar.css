@@ -12,6 +12,10 @@
   color: inherit;
 }
 
+.nav * a.active {
+  color: red;
+}
+
 .title a{
   font-size: 1rem;
   padding: 0.5rem;
