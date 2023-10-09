@@ -1,6 +1,7 @@
 import HomePage from "./components/homePage";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
+import Projects from "./components/Projects";
 import ErrorPage from './components/ErrorPage.jsx';
 
 import './styles/App.css';
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />
+      },
+      {
+        path: "projects",
+        element: <Projects />
       }
     ]
   }
