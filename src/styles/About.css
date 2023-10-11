@@ -1,6 +1,7 @@
 #about{
   margin: auto;
   width: 75%;
+  height: 90vh;
   text-align: center;
 }
 
@@ -11,10 +12,20 @@
   border: 4px solid #8aa29e
 }
 
+.user-card-container {
+  display: flex;
+  align-items: center; 
+  height: 100%;
+}
+
 .user-card{
-  background-color: #686963;
+  background-image: linear-gradient(orangered, purple);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.user-card > p, h2, h3 {
+  color: white
 }
 
 .user-description{
