@@ -8,6 +8,7 @@ import './styles/App.css';
 
 import {
   createBrowserRouter,
+  HashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -17,18 +18,18 @@ const router = createBrowserRouter([
     element: <NavBar />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "about",
-        element: <About />
-      },
-      {
-        path: "projects",
-        element: <Projects />
-      }
+      // {
+      //   path: "/",
+      //   element: <HomePage />,
+      // },
+      // {
+      //   path: "/",
+      //   element: <About />
+      // },
+      // {
+      //   path: "projects",
+      //   element: <Projects />
+      // }
     ]
   }
 ])
@@ -37,9 +38,12 @@ const App = () => {
  
   return (
     <>
-      <RouterProvider
-        router={router}
-        />
+      <HashRouter >
+        <NavBar />
+        <HomePage />
+        <About />
+        <Projects />
+      </HashRouter>
     </>
   )
 }
