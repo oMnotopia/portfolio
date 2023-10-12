@@ -1,48 +1,50 @@
-.nav{
+#nav-bar{
   display: flex;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  height: 10vh
+  height: 10vh;
+  top: 0;
+  position: sticky;
 }
 
-.nav * a.active {
+#nav-bar * a.active {
   color: #F6019D;
 }
 
-nav .info {
+#nav-bar .info {
   --_gap: 2rem;
   display: flex;
   list-style: none;
 }
 
-nav .info > *, nav .title > * {
+#nav-bar .info > *, #nav-bar .title > * {
   text-decoration: none;
   text-transform: uppercase;
   color: #2DE2E6;
 }
 
-nav .title a {
+#nav-bar .title a {
   font-size: 1rem;
   padding: 0 1rem;
   position: relative;
 }
 
-nav .info a {
+#nav-bar .info a {
   padding-inline: calc(var(--_gap) / 2);
   position: relative;
   margin: 0;
 }
 
-nav .info a:hover, nav .title a:hover {
+#nav-bar .info a:hover, #nav-bar .title a:hover {
   color: #F6019D;
 }
 
-nav .info a:hover::after, nav .title a:hover::after {
+#nav-bar .info a:hover::after, #nav-bar .title a:hover::after {
   scale: 1 1;
 }
 
-nav .info a::after, nav .title a::after {
+#nav-bar .info a::after, #nav-bar .title a::after {
   content: '';
   position: absolute;
   left: 0;
