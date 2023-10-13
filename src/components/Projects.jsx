@@ -1,4 +1,5 @@
 import ResourceWallMP from '../assets/resource-wall.png'
+import ThreeJSPage from '../assets/three-js-page.png'
 
 const Projects = () => {
   return (
@@ -6,6 +7,7 @@ const Projects = () => {
 
       <div className="wrapper">
         <div className="accordion">
+
           <div className="accordion-panel">
             <h2 id="panel1-heading">
               <button
@@ -17,7 +19,6 @@ const Projects = () => {
                 <svg aria-hidden="true" className="accordion-icon"></svg>
               </button>
             </h2>
-
             <div
               className="accordion-content"
               id="panel1-content"
@@ -35,6 +36,38 @@ const Projects = () => {
               />
             </div>
           </div>
+
+          <div className="accordion-panel">
+            <h2 id="panel2-heading">
+              <button
+                className="accordion-trigger"
+                aria-controls="panel2-content"
+                aria-expanded="true"
+              >
+                <span id="panel2-title">Boating</span> 
+                <svg aria-hidden="true" className="accordion-icon"></svg>
+              </button>
+            </h2>
+            <div
+              className="accordion-content"
+              id="panel2-content"
+              aria-labelledby="panel2-heading"
+              aria-hidden="false"
+              role="region"
+            >
+              <p>
+                LOREM IPSUM 1
+              </p>
+              <img
+                class="accordion-image"
+                src={ThreeJSPage}
+                alt="resource wall main page"
+              />
+            </div>
+          </div>
+
+
+
         </div>
       </div>
 
