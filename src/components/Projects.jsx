@@ -1,6 +1,14 @@
 import ResourceWallMP from '../assets/resource-wall.png'
 import ThreeJSPage from '../assets/three-js-page.png'
 
+import { FaPython } from 'react-icons/fa';
+import { RiJavascriptFill } from 'react-icons/ri'
+import { TbBrandThreejs } from 'react-icons/tb'
+
+
+
+import '../styles/projects.css'
+
 const Projects = () => {
   return (
     <section id="projects">
@@ -16,7 +24,12 @@ const Projects = () => {
                 aria-expanded="true"
               >
                 <span id="panel1-title">Boating</span> 
-                <svg aria-hidden="true" className="accordion-icon"></svg>
+                <span
+                  aria-hidden="true"
+                  className="accordion-icon"
+                >
+                  <RiJavascriptFill />
+                </span>
               </button>
             </h2>
             <div
@@ -30,7 +43,7 @@ const Projects = () => {
                 LOREM IPSUM 1
               </p>
               <img
-                class="accordion-image"
+                className="accordion-image"
                 src={ResourceWallMP}
                 alt="resource wall main page"
               />
@@ -45,7 +58,12 @@ const Projects = () => {
                 aria-expanded="true"
               >
                 <span id="panel2-title">Boating</span> 
-                <svg aria-hidden="true" className="accordion-icon"></svg>
+                <span
+                  aria-hidden="true"
+                  className="accordion-icon"
+                >
+                  <TbBrandThreejs />
+                </span>
               </button>
             </h2>
             <div
@@ -59,7 +77,7 @@ const Projects = () => {
                 LOREM IPSUM 1
               </p>
               <img
-                class="accordion-image"
+                className="accordion-image"
                 src={ThreeJSPage}
                 alt="resource wall main page"
               />
