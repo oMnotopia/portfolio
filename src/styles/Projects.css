@@ -18,6 +18,16 @@ img{
 .accordion-panel {
   position: relative;
   isolation: isolate;
+  flex-basis: 100px;
+  overflow: hidden;
+}
+
+.accordion-panel:nth-child(1) {
+  --_panel-color: red;
+}
+
+.accordion-panel:nth-child(2) {
+  --_panel-color: blue;
 }
 
 .accordion-image{
@@ -30,8 +40,13 @@ img{
 }
 
 .accordion-trigger{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse;
   background: transparent;
   border: 0;
+  padding: 0;
 }
 
 .accordion-icon {
@@ -43,12 +58,6 @@ img{
   border-radius: 50%;
 }
 
-.accordion-panel:nth-child(1) {
-  --_panel-color: red;
-}
 
-.accordion-panel:nth-child(2) {
-  --_panel-color: blue;
-}
 
 
