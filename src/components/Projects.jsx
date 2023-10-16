@@ -5,16 +5,24 @@ import { FaPython } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io'
 import { TbBrandThreejs } from 'react-icons/tb'
 
-
-
 import '../styles/projects.css'
 
 const Projects = () => {
+
+  const handleClick = (e) => {
+    const activePanel = e.target.closest('.accordion-panel')
+    if (!activePanel) return;
+  }
+
+  const toggleAccordion = (panelToActivate) => {
+    const buttons = panelToActivate.parentElement
+  }
+
   return (
     <section id="projects">
 
       <div className="wrapper">
-        <div className="accordion">
+        <div className="accordion" onClick={(e) => handleClick(e)}>
 
           <div className="accordion-panel">
             <h2 id="panel1-heading">
