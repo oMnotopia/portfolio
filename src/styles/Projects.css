@@ -62,6 +62,11 @@ img{
   flex-basis: clamp(15rem, 40vh, 20rem);
 }
 
+.accordion-content > p {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
 .accordion-image{
   position: absolute;
   inset: 0;
