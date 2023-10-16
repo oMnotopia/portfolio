@@ -2,7 +2,7 @@ import ResourceWallMP from '../assets/resource-wall.png'
 import ThreeJSPage from '../assets/three-js-page.png'
 
 import { FaPython } from 'react-icons/fa';
-import { RiJavascriptFill } from 'react-icons/ri'
+import { IoLogoJavascript } from 'react-icons/io'
 import { TbBrandThreejs } from 'react-icons/tb'
 
 
@@ -28,7 +28,7 @@ const Projects = () => {
                   aria-hidden="true"
                   className="accordion-icon"
                 >
-                  <RiJavascriptFill />
+                  <IoLogoJavascript />
                 </span>
               </button>
             </h2>
@@ -55,7 +55,7 @@ const Projects = () => {
               <button
                 className="accordion-trigger"
                 aria-controls="panel2-content"
-                aria-expanded="true"
+                aria-expanded="false"
               >
                 <span id="panel2-title">Boating</span> 
                 <span
@@ -70,6 +70,108 @@ const Projects = () => {
               className="accordion-content"
               id="panel2-content"
               aria-labelledby="panel2-heading"
+              aria-hidden="false"
+              role="region"
+            >
+              <p>
+                LOREM IPSUM 1
+              </p>
+              <img
+                className="accordion-image"
+                src={ThreeJSPage}
+                alt="resource wall main page"
+              />
+            </div>
+          </div>
+
+          <div className="accordion-panel">
+            <h2 id="panel3-heading">
+              <button
+                className="accordion-trigger"
+                aria-controls="panel3-content"
+                aria-expanded="false"
+              >
+                <span id="panel3-title">Boating</span> 
+                <span
+                  aria-hidden="true"
+                  className="accordion-icon"
+                >
+                  <TbBrandThreejs />
+                </span>
+              </button>
+            </h2>
+            <div
+              className="accordion-content"
+              id="panel3-content"
+              aria-labelledby="panel3-heading"
+              aria-hidden="false"
+              role="region"
+            >
+              <p>
+                LOREM IPSUM 1
+              </p>
+              <img
+                className="accordion-image"
+                src={ThreeJSPage}
+                alt="resource wall main page"
+              />
+            </div>
+          </div>
+
+          <div className="accordion-panel">
+            <h2 id="panel4-heading">
+              <button
+                className="accordion-trigger"
+                aria-controls="panel4-content"
+                aria-expanded="false"
+              >
+                <span id="panel4-title">Boating</span> 
+                <span
+                  aria-hidden="true"
+                  className="accordion-icon"
+                >
+                  <TbBrandThreejs />
+                </span>
+              </button>
+            </h2>
+            <div
+              className="accordion-content"
+              id="panel4-content"
+              aria-labelledby="panel4-heading"
+              aria-hidden="false"
+              role="region"
+            >
+              <p>
+                LOREM IPSUM 1
+              </p>
+              <img
+                className="accordion-image"
+                src={ThreeJSPage}
+                alt="resource wall main page"
+              />
+            </div>
+          </div>
+
+          <div className="accordion-panel">
+            <h2 id="panel5-heading">
+              <button
+                className="accordion-trigger"
+                aria-controls="panel5-content"
+                aria-expanded="false"
+              >
+                <span id="panel5-title">Boating</span> 
+                <span
+                  aria-hidden="true"
+                  className="accordion-icon"
+                >
+                  <TbBrandThreejs />
+                </span>
+              </button>
+            </h2>
+            <div
+              className="accordion-content"
+              id="panel5-content"
+              aria-labelledby="panel5-heading"
               aria-hidden="false"
               role="region"
             >
